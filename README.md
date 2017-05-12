@@ -7,9 +7,9 @@ It is also a means to practice GitHub workflows using a simple markdown file (th
 
 I am very new to learning all of these GitHub workflows myself so both patience and corrections are very much welcome! -[Josh Morel](https://github.com/joshmorel) 
 
-## Organization Structure
+## Working with Organizations
 
-Note: Much of this is distilled from the [information provided here] (https://help.github.com/categories/setting-up-and-managing-organizations-and-teams/)
+Note: Much of this is distilled from the [information provided here](https://help.github.com/categories/setting-up-and-managing-organizations-and-teams/)
 
 ### Organization and Roles
 
@@ -22,7 +22,9 @@ We started by creating an organization for [our cohort](https://github.com/orgs/
 
 There is also a **Owner** role who can invite and delete members, add billing information and delete the organization. My plan is to give active members the **Owner** role.
 
-### Teams and Organization repos
+### Teams and Organization Repos
+
+#### Organization Repos 
 
 As mentioned previously all team members have the ability to create organization repos. They then have the ability to change permissions on that [repo for different users](https://help.github.com/articles/repository-permission-levels-for-an-organization/#changing-repository-settings]) so that specific people can collaborate.
 
@@ -32,5 +34,26 @@ To create a repo simply click on the **Repositories** tab then click **New**:
 
 To streamline and better organize permissions on a repo there are **Teams**.
 
-TODO: Add instructions on creating team and transfering repo to team. 
+#### Teams
 
+Any organization member can create a team. To do so, click on the **Teams** tab then click **New**. 
+
+![create new team](images/teams-new.png "Create New Team")
+
+After creation, you will be taken to the team page. Here you can add members by clicking the **Add a member** button then search by username, full name, or email. Click on the user to add them. You will be prompted for your password before continuing. 
+
+![add member to team](images/teams-add.png "Add User")
+
+If they are in the organization they will automatically added. If they are not, then an invite will be sent to them which they must accept. For more [ the docs](https://help.github.com/articles/adding-organization-members-to-a-team/).
+
+After adding, team members can be promoted to the **Maintainer** role. Maintainers have the [following permissions](https://help.github.com/articles/repository-permission-levels-for-an-organization/#team-maintainers). 
+
+#### Team Repos
+
+Those with admin access to an organization repo (the creator, those granted admin access, or the organization owner) can add that repo to any team they belong to. To do so, click on the **Repositorires** tab, click **Add repository** then search for the repo and select it.
+
+![add repo to team](images/repos-add.png "Add Repo")
+
+Now all members of the team will have Admin access. This access can be changed by navigating to **Settings** then **Collaborators & team** within the repo. More about repository permission levels can be [read here](https://help.github.com/articles/repository-permission-levels-for-an-organization/).
+
+TODO: Workflows between organization, individual on GitHub and local.
